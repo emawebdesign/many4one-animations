@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Many4One Animations</title>
+<meta name="description" content="Many animations for one element with Animate.css and jQuery." />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="animate.min.css" rel="stylesheet" media="screen">
+<script src="jquery.min.js"></script>
+<script src="many4one.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	
+	$("#image").many4oneAnimations({  
+	  animations: ['flipInX','pulse'] 
+	});
+	
+	$('#image').on('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function(event) {
+
+          event.stopPropagation();
+		  
+		  $('#txt').removeClass('animated').off().many4oneAnimations({  
+			  animations: ['fadeInUp','bounce'] 
+			});
+		  
+	});
+	
+});
+</script>
+<style type="text/css">
+.element {
+	width:200px;
+	padding-top:50px;
+	margin:0 auto;
+}
+p {
+	width:100%;
+	text-align:center;
+	font-size:18px;
+}
+</style>
+</head>
+<body>
+<div class="element">
+<img id="image" src="image.jpg">
+</div>
+<p id="txt">Text animate</p>
+</body>
+</html>

@@ -11,9 +11,11 @@ Version: 1.0
 
 Usage: 
 
+`````javascript
 $("#element").many4oneAnimations({  
   animations: ['tada','shake'] 
 });
+`````
 
 License: MIT License http://opensource.org/licenses/MIT
 

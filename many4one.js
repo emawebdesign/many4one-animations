@@ -9,7 +9,7 @@ Many animations for one element with Animate.css and jQuery.
 @require: jQuery v1.9.1 (or above) - Animate.css https://daneden.me/animate
 @author: EmaWebDesign
 @version: 1.0
-@website: http://www.emawebdesign.com/2013/12/26/associare-piu-animazioni-a-un-singolo-elemento-con-animate-css-e-jquery
+@website: http://www.emawebdesign.com/2013/12/27/associare-piu-animazioni-a-un-singolo-elemento-con-animate-css-e-jquery
 @license: MIT license http://opensource.org/licenses/MIT
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
